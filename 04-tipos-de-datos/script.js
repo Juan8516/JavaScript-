@@ -12,8 +12,13 @@ let interes = 2.7
 //Booleano
 let mayorEdad = true
 
-//Undifined - null variable no inicializada (intencionalmente)
+//Undefined - variable no inicializada (intencionalmente para mostrar resultado undefined)
 let vacio
+console.log(typeof(vacio))
+
+//Null - tipo de dato null
+let tipoNull = null
+console.log(tipoNull)
 
 //Array o arreglo
 let frutas = ['Fresa', 'Durazno', 'Naranja']
