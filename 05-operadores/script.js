@@ -98,3 +98,14 @@ mensaje_total += ' soy Juan Manuel Salazar DEV'
 console.log("Mensaje concatenado: " + mensaje_total)
 
 //Incremento y decremento
+let cifra = 1200
+
+console.log(`Cifra inicial: ${cifra}`)
+
+//Operador de incremento
+cifra++
+console.warn(`Incremento: ${cifra}`)
+
+//Operador de decremento
+cifra--
+console.warn(`Incremento: ${cifra}`)
