@@ -86,4 +86,15 @@ console.log(esMayorDeEdad || tieneEntrada)
 console.log(!esMayorDeEdad)
 
 //Cadena
+let mensaje1 = 'Hola'
+let mensaje2 = 'que tal'
+
+//Concatenacion de las variables tipo string
+let mensaje_total = mensaje1 + ', '+mensaje2
+
+//Se suma nueva cadena con operador de asigancion +=
+mensaje_total += ' soy Juan Manuel Salazar DEV'
+
+console.log("Mensaje concatenado: " + mensaje_total)
+
 //Incremento y decremento
