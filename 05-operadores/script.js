@@ -51,7 +51,27 @@ console.log(elNumero)    //Muestra el valor en la consola de manera normal
 console.error(elNumero) //Muestra el valor como un error en la consola
 console.warn(elNumero) //Muestra el valor como una advertencia en la consola
 
-//Comparacion
+//----Comparacion - Compara valores y devuelve un booleano
+let numeroComparacion = 33
+
+//Comparacion de valores (no estricto, resultado true)
+console.log(numeroComparacion == '33')
+
+//Comparacion de valores (estricto, resultado false)
+console.warn(numeroComparacion === '33') //Evalua dato mas tipo de dato
+
+//Comparacion de desigualdad
+console.log(numeroComparacion != 31)
+
+//Comparacion de desigualdad (estricto)
+console.log(numeroComparacion !== '33')
+
+//Mayor que, menor que
+console.log(numeroComparacion > 31)
+console.error(numeroComparacion < 31)
+console.warn(numeroComparacion >= 31)
+console.warn(numeroComparacion <= 31)
+
 //Logisticos
 //Cadena
 //Incremento y decremento
