@@ -72,6 +72,18 @@ console.error(numeroComparacion < 31)
 console.warn(numeroComparacion >= 31)
 console.warn(numeroComparacion <= 31)
 
-//Logisticos
+//----Logicos - Valida si dos condiciones son verdaderas o falsas, o si una es falsa, o si una es verdadera
+let esMayorDeEdad = true 
+let tieneEntrada = true
+
+//El operador && verifica si las dos condiciones son verdaderas (devuelve true)
+console.log(esMayorDeEdad && tieneEntrada)
+
+//El operador || verifica si una de las dos condiciones es verdadera (devuelve true)
+console.log(esMayorDeEdad || tieneEntrada)
+
+//El operador ! invierte la condicion de la variable, segun la inicializacion
+console.log(!esMayorDeEdad)
+
 //Cadena
 //Incremento y decremento
