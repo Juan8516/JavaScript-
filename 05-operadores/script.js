@@ -85,7 +85,7 @@ console.log(esMayorDeEdad || tieneEntrada)
 //El operador ! invierte la condicion de la variable, segun la inicializacion
 console.log(!esMayorDeEdad)
 
-//Cadena
+//---Operaciones con cadena
 let mensaje1 = 'Hola'
 let mensaje2 = 'que tal'
 
