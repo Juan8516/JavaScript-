@@ -55,5 +55,18 @@ let resultado = (edad >= 18) ? `${nombre} es mayor de edad` : `${nombre} es meno
 console.log(resultado)
 
 
+//Diferencias entre vas y let (alcance y bloques)
+//let: Tiene alcance de bloque y evita redeclaraciones.
+//var: Tiene alcance de función y permite redeclaraciones.
 
-//Diferencias entre vas y let
+//-----let
+if (true) {
+    let x = 10;
+}
+console.log(x); // ❌ Error: x is not defined (porque solo existe dentro del bloque)
+
+//-----var
+if (true) {
+    var y = 20;
+}
+console.log(y); // ✅ 20 (porque `var` no respeta el bloque, solo la función)
