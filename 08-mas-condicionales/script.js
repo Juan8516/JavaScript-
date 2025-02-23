@@ -45,6 +45,15 @@ if(miAlmuerzo == 'Bandeja') {
 
 
 //Condicional ternario
+//ternario: (condición ? expr1 : expr2): Forma simplificada de if-else.
+
+let nombre = 'Juan Manuel Salazar';
+let edad = 17;
+
+let resultado = (edad >= 18) ? `${nombre} es mayor de edad` : `${nombre} es menor de edad`
+
+console.log(resultado)
+
 
 
 //Diferencias entre vas y let
