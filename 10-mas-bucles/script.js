@@ -16,19 +16,41 @@
 */
 
 //-----Ejemplo
-let year = 1999;
-let objetivo = 2177;
-let interferencia = 2038
+// let year = 1999;
+// let objetivo = 2177;
+// let interferencia = 2038
 
-while(year <= objetivo) {
+// while(year <= objetivo) {
 
-    console.warn(`Vamos en el año: ${year}`);
+//     console.warn(`Vamos en el año: ${year}`);
 
-    if(year === interferencia) {
-        console.error(`Simon ya tiene 18 años`);
-        break;
-    }
+//     if(year === interferencia) {
+//         console.error(`Simon ya tiene 18 años`);
+//         break;
+//     }
 
-    year++;
+//     year++;
 
-}
+// }
+
+//do-while: Ejecuta el código al menos una vez, y luego sigue repitiendo mientras la condición sea verdadera.
+
+/*
+    Estructura del bucle do while
+
+    do{
+
+        ejecutar codigo
+
+    }while(condicion)
+*/
+
+//-----Ejemplo
+let numeros = 47;
+
+do {
+
+    console.log(numeros);
+    numeros--;
+
+}while(numeros > 0);
