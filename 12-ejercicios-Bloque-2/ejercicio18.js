@@ -13,10 +13,15 @@ let intento;
 
 while(intento != numAdivinar) {
 
-    intento = parseInt(prompt('Ingresar numero de 1 a 17'))
+    intento = parseInt(prompt('Ingresar numero de 1 a 17'));
 
     if(numAdivinar === intento) {
-        alert(`Correcto el numero era es el: ${intento}`)
+        
+        alert(`Correcto el numero era es el: ${intento}`);
+        
+    } else {
+        
+        alert('Sigue intentando !!!!!');
     }
 }
 
