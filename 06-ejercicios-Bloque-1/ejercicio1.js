@@ -7,9 +7,9 @@
     -Guarda el resultado en una variable.
 */
 
-let distancia = 384000
-let velocidadNave = 1225
+let distancia = 384000;
+let velocidadNave = 1225;
 
-let tiempoRecorrido = distancia/velocidadNave
+let tiempoRecorrido = distancia/velocidadNave;
 
-console.warn(`El tiempo de recorrido es: ${tiempoRecorrido} horas`)
+console.warn(`El tiempo de recorrido es: ${tiempoRecorrido} horas`);

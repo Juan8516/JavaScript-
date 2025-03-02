@@ -92,10 +92,10 @@ if(year >= 2000 && year <= 2030){
 
 if(year == 2007 || year == 2017 || year == 2027 || year == 2037){
 
-    console.log('El año termina en 7')
+    console.log('El año termina en 7');
 
 }else {
 
-    console.log('El año es desconocido')
+    console.log('El año es desconocido');
     
 }

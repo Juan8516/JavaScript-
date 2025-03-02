@@ -7,9 +7,9 @@
 
 */
 
-let millaEnKilometros = 1.6
-let longitudAutopista = 120
+let millaEnKilometros = 1.6;
+let longitudAutopista = 120;
 
-let convertir = longitudAutopista * millaEnKilometros
+let convertir = longitudAutopista * millaEnKilometros;
 
-console.log(`En una autopista de 120 millas hay un total de ${convertir} kilometros`)
+console.log(`En una autopista de 120 millas hay un total de ${convertir} kilometros`);

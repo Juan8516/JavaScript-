@@ -2,7 +2,7 @@
     ----Ejercicio 11----
 
     -Nuestros usuarios tienen perros
-    'Quieren saber que edad tienen sus mascotas.
+     Quieren saber que edad tienen sus mascotas.
     *Un año humano equivale a siete de perro.
 
     Preguntar a los usuarios que edad tiene el perro, y decir la edad canina

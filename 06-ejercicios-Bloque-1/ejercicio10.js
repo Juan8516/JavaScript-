@@ -1,14 +1,14 @@
 /*
     ----Ejercicio 10----
 
-    - 3 amigos fueron a un restaurante.
+    - 3 amigos fueron a un restaurante de hamburguesas.
 
     Amigo1 = se comio 2
     Amigo2 = se comio 3
     Amigo3 = se comio 6
 
-    Cuantos hamburguesas nos comimos en total ?
-    Es cierto que yo comi menos hamburguesas que el Amigo1 ?
+    Cuantas hamburguesas nos comimos en total ?
+    Es cierto que amigo1 comio menos hamburguesas que el Amigo2 ?
 
     Devolver respuestas en la consola.
 

@@ -17,5 +17,5 @@ for(let contador = 1; contador <= distancia; contador++) {
     distanciaRecorrida += saltokangorou;
 
     console.log(`El canguro ha saltado ${contador} saltos
-                 Ha recorrido ${distanciaRecorrida} metros`)
+                 Ha recorrido ${distanciaRecorrida} metros`);
 }

@@ -7,9 +7,9 @@
 
 */
 
-let horas = 7
-const minutosHora = 60
+let horas = 7;
+const minutosHora = 60;
 
-let resultado = minutosHora * horas
+let resultado = minutosHora * horas;
 
-console.log(`En 7 horas hay un total de ${resultado} minutos`)
+console.log(`En 7 horas hay un total de ${resultado} minutos`);

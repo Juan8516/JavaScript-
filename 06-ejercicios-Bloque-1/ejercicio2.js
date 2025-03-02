@@ -6,9 +6,9 @@
 
 */
 
-let cajas = 7
-let galletasPorCaja = 8
+let cajas = 7;
+let galletasPorCaja = 8;
 
-let totalGalletas = cajas * galletasPorCaja
+let totalGalletas = cajas * galletasPorCaja;
 
-console.log(`El total de galletas es: ${totalGalletas}`)
+console.log(`El total de galletas es: ${totalGalletas}`);

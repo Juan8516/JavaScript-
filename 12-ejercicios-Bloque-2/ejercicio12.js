@@ -39,7 +39,7 @@ if(numero1 === numero2) {
 
 } else {
 
-    alert('No has ingresado un numero')
+    alert('No has ingresado un numero');
 
 }
 

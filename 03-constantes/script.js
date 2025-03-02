@@ -1,15 +1,14 @@
 //Constantes
-//Variable cuyo contenido nunca se puede cambiar
+//Variables cuyo contenido nunca se pueden cambiar
 
-let nombre = 'Juan Manuel'
-let apellidos = 'Salazar'
+let nombre = 'Juan Manuel';
+let apellidos = 'Salazar';
 
 //Constantes
-const cedula = 1043786553
+const cedula = 1043786553;
 
 //Se trata de sobreescribir la constante (la intencion es mostrar el error)
-cedula = 1043786456
+cedula = 1043786456;
 
-
-console.log(nombre, apellidos)
-alert(cedula)
+console.log(nombre, apellidos);
+alert(cedula);

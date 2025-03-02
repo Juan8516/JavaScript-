@@ -8,9 +8,9 @@
 
 */
 
-let pesoJirafa = 1120
-let hojasKilos = 141
+let pesoJirafa = 1120;
+let hojasKilos = 141;
 
-let nuevoPeso = pesoJirafa + hojasKilos
+let nuevoPeso = pesoJirafa + hojasKilos;
 
-console.warn(`El peso nuevo de la jirafa es: ${nuevoPeso} kilos al comer ${hojasKilos}`)
+console.warn(`El peso nuevo de la jirafa es: ${nuevoPeso} kilos al comer ${hojasKilos}`);

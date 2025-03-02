@@ -20,6 +20,6 @@ console.log(`Los numeros impares entre ${numero1} y ${numero2}`);
 for(let contador = numero1 + 1; contador < numero2; contador++) {
 
     if(contador % 2 !== 0) {
-        console.log(contador)
+        console.log(contador);
     }
 }
