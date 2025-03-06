@@ -1,7 +1,7 @@
 //Funciones: son bloques de código reutilizables que ejecutan una tarea específica. Pueden recibir parámetros y 
 // devolver un resultado.
 
-function saludo(sector, ruta) {
+function saludo(sector, ruta = 'Punto de encuentro') {
     console.log(`Atencion sector ${sector}!!!!!!`);
     console.warn('Peligroooo !!!!!!');
     console.error(`Explosion inminente tomar ${ruta}!!!!!!`);
@@ -16,6 +16,8 @@ let mensajeFinal1 = saludo(16, 'ruta subterranea');
 let mensajeFinal2 = saludo(85, 'ruta trasera');
 
 alert(mensajeFinal);
+
+saludo(93);
 
 
 /*
