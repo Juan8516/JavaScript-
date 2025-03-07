@@ -94,3 +94,9 @@ function mejoresPeliculas(pelicula1 = '', pelicula2 = '', ..._resto_peliculas) {
 }
 
 mejoresPeliculas('El padrino II', 'Rocky II', 'Dia de la independencia', 'Enemigo publico');
+
+// El operador spread = (...) en JavaScript se usa para expandir elementos de un array, objeto o iterable en lugares 
+// donde se esperan múltiples valores.
+
+let misPeliculasFav = ['La vida es bella', 'Batman Dark Night']
+mejoresPeliculas(...misPeliculasFav, 'Valiente', 'Cards', 'La naranja mecanica')
