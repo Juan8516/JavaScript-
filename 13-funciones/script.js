@@ -29,57 +29,68 @@ for(let i = 0; i < 20; i++) {
 
 //Funciones dentro de funciones
 
-function operaciones(numero1, numero2) {
+// function operaciones(numero1, numero2) {
 
-    let resultados = {
+//     let resultados = {
 
-        'suma': (numero1 + numero2),
-        'resta': (numero1 - numero2),
-        'multiplicacion': (numero1 * numero2),
-        'division': (numero1 / numero2)
-    }
+//         'suma': (numero1 + numero2),
+//         'resta': (numero1 - numero2),
+//         'multiplicacion': (numero1 * numero2),
+//         'division': (numero1 / numero2)
+//     }
     
-    return resultados;
+//     return resultados;
+// }
+
+// function porConsola(numero1, numero2) {
+
+//     let resultados = operaciones(numero1, numero2);
+    
+//     console.log(`Suma: ${resultados.suma}`);
+//     console.log(`Resta: ${resultados.resta}`);
+//     console.log(`Multiplicacion: ${resultados.multiplicacion}`);
+//     console.log(`Division: ${resultados.division}`);
+    
+//     return true;
+// }
+
+// function porPantalla(numero1, numero2) {
+
+//     let resultados = operaciones(numero1, numero2);
+    
+//     document.write('<h1>Calculadora</h1>')
+//     document.write(`<h2>Suma: ${resultados.suma}</h2>`);
+//     document.write(`<h2>Resta: ${resultados.resta}</h2>`);
+//     document.write(`<h2>Multiplicacion: ${resultados.multiplicacion}</h2>`);
+//     document.write(`<h2>Division: ${resultados.division}</h2>`);
+//     document.write('<hr>')
+    
+//     return true;
+// }
+
+// function calculadora(numero1, numero2, mostrar = false) {
+
+//     if(mostrar == false) {
+
+//          porConsola(numero1, numero2);
+
+//     } else {
+
+//         porPantalla(numero1, numero2);
+
+//     }
+// }
+
+// porConsola(16, 4);
+// porPantalla(50, 5);
+
+//Parametro REST - El parámetro REST (...) en JavaScript permite a una función recibir un número indefinido 
+// de argumentos y almacenarlos en un array.
+
+function mejoresPeliculas(pelicula1 = '', pelicula2 = '', ..._resto_peliculas) {
+    console.log(pelicula1);
+    console.log(pelicula2);
+    console.log(_resto_peliculas);
 }
 
-function porConsola(numero1, numero2) {
-
-    let resultados = operaciones(numero1, numero2);
-    
-    console.log(`Suma: ${resultados.suma}`);
-    console.log(`Resta: ${resultados.resta}`);
-    console.log(`Multiplicacion: ${resultados.multiplicacion}`);
-    console.log(`Division: ${resultados.division}`);
-    
-    return true;
-}
-
-function porPantalla(numero1, numero2) {
-
-    let resultados = operaciones(numero1, numero2);
-    
-    document.write('<h1>Calculadora</h1>')
-    document.write(`<h2>Suma: ${resultados.suma}</h2>`);
-    document.write(`<h2>Resta: ${resultados.resta}</h2>`);
-    document.write(`<h2>Multiplicacion: ${resultados.multiplicacion}</h2>`);
-    document.write(`<h2>Division: ${resultados.division}</h2>`);
-    document.write('<hr>')
-    
-    return true;
-}
-
-function calculadora(numero1, numero2, mostrar = false) {
-
-    if(mostrar == false) {
-
-         porConsola(numero1, numero2);
-
-    } else {
-
-        porPantalla(numero1, numero2);
-
-    }
-}
-
-porConsola(16, 4);
-porPantalla(50, 5);
+mejoresPeliculas('El padrino II', 'Rocky II', 'Dia de la independencia', 'Enemigo publico');
