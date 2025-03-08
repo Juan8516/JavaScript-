@@ -21,6 +21,29 @@ setInterval(function () {
     console.log(`Funcion ejecutada ${veces} veces`)
 
 }, 1000);
-*/
 
 setInterval(saludo, 2000);
+*/
+
+//Funciones Callbacks - avanzado
+function restame(n1, n2, mostrar, multiPorTres) {
+
+    let resta = n1 - n2;
+
+    mostrar(resta);
+    multiPorTres(resta);
+
+    return resta;
+}
+
+restame(100, 5, function(resultado) {
+
+    console.log(resultado);
+
+}, 
+function(resultado) {
+
+    console.log(resultado * 3);
+
+});
+
