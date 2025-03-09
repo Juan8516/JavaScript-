@@ -52,31 +52,40 @@ setInterval(saludo, 2000);
 /*Global = Una variable declarada fuera de cualquier función o bloque tiene ámbito global y 
 puede ser accedida desde cualquier parte del código.*/
 
-let rutaGit = ('https://github.com/Juan8516');
+// let rutaGit = ('https://github.com/Juan8516');
 
-function mostrarRuta() {
+// function mostrarRuta() {
 
-    //Global - Llamado de la variable dentro de la funcion
-    console.warn(rutaGit);
+//     //Global - Llamado de la variable dentro de la funcion
+//     console.warn(rutaGit);
 
-    //Local = Las variables declaradas dentro de una función solo pueden ser accedidas dentro de esa función. 
-    // No existen fuera de ella.
-    let nombre = ("Ruta Git Juan Manuel Salazar");
+//     //Local = Las variables declaradas dentro de una función solo pueden ser accedidas dentro de esa función. 
+//     // No existen fuera de ella.
+//     let nombre = ("Ruta Git Juan Manuel Salazar");
 
-}
+// }
 
-//Local - Llamado de la variable fuera de la funcion
-console.error(nombre); //❌ Error: mensaje is not defined
-mostrarRuta();
+// //Local - Llamado de la variable fuera de la funcion
+// console.error(nombre); //❌ Error: mensaje is not defined
+// mostrarRuta();
 
 /*Bloque = Con let y const, las variables tienen ámbito de bloque {}. Solo existen dentro del bloque en 
 el que fueron declaradas.*/
 
-if (true) {
+// if (true) {
 
-    let bloque = "Solo existo aquí";
-    console.log(bloque); // 👉 "Solo existo aquí"
+//     let bloque = "Solo existo aquí";
+//     console.log(bloque); // 👉 "Solo existo aquí"
     
-}
+// }
 
-console.log(bloque); // ❌ Error: bloque is not defined
+// console.log(bloque); // ❌ Error: bloque is not defined
+
+//Hoisting o elevacion = El hoisting es un comportamiento de JavaScript donde las declaraciones de variables y funciones se 
+//"mueven" al inicio de su contexto (global o función) antes de que el código se ejecute.
+
+//let carro = 'Mercedes';
+//console.log(carro);// ❌ Cannot access 'carro' before initialization
+
+console.log(carro1); // 👉 undefined (hoisting ocurre)
+var carro1 = 'Ferrari';
