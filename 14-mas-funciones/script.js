@@ -89,3 +89,24 @@ el que fueron declaradas.*/
 
 console.log(carro1); // 👉 undefined (hoisting ocurre)
 var carro1 = 'Ferrari';
+
+//Funciones de fecha = Son una forma más corta y moderna de escribir funciones en JavaScript. Se introdujeron en ES6 y 
+//tienen un comportamiento especial con el this.
+
+//Definir funcion
+
+let lenguajesProgramacion = () => {
+
+    console.warn('HTML');
+    console.warn('css');
+    console.warn('JavaScript');
+}
+
+lenguajesProgramacion();
+
+//Usandola en un callback
+
+setTimeout( () => {
+
+    console.error('Funcion de flecha como callback');
+}, 2000)
