@@ -6,14 +6,14 @@
 
 */
 
-let numero = parseInt(prompt('Ingresar numero: '))
-let limite = parseInt(prompt('Ingresar limite: '))
+let numero = parseInt(prompt('Ingresar numero: '));
+let limite = parseInt(prompt('Ingresar limite: '));
 
-console.warn(`La tabla del ${numero}`)
+console.warn(`La tabla del ${numero}`);
 
 for(let contador = 1; contador <= limite; contador++) {
 
-    resultado = numero * contador
-    console.log(`${numero} X ${contador} = ${resultado}`)
+    resultado = numero * contador;
+    console.log(`${numero} X ${contador} = ${resultado}`);
 
 }

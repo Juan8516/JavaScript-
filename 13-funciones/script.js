@@ -5,7 +5,7 @@
 //     console.log(`Atencion sector ${sector}!!!!!!`);
 //     console.warn('Peligroooo !!!!!!');
 //     console.error(`Explosion inminente tomar ${ruta}!!!!!!`);
-//     console.log('------------------------')
+//     console.log('------------------------');
 
 //     //JavaScript se usa dentro de una función para devolver un valor y finalizar su ejecución.
 //     return 'Alerta enviada correctamente !!!!!'
@@ -58,12 +58,12 @@ for(let i = 0; i < 20; i++) {
 
 //     let resultados = operaciones(numero1, numero2);
     
-//     document.write('<h1>Calculadora</h1>')
+//     document.write('<h1>Calculadora</h1>');
 //     document.write(`<h2>Suma: ${resultados.suma}</h2>`);
 //     document.write(`<h2>Resta: ${resultados.resta}</h2>`);
 //     document.write(`<h2>Multiplicacion: ${resultados.multiplicacion}</h2>`);
 //     document.write(`<h2>Division: ${resultados.division}</h2>`);
-//     document.write('<hr>')
+//     document.write('<hr>');
     
 //     return true;
 // }
@@ -99,4 +99,4 @@ mejoresPeliculas('El padrino II', 'Rocky II', 'Dia de la independencia', 'Enemig
 // donde se esperan múltiples valores.
 
 let misPeliculasFav = ['La vida es bella', 'Batman Dark Night']
-mejoresPeliculas(...misPeliculasFav, 'Valiente', 'Cards', 'La naranja mecanica')
+mejoresPeliculas(...misPeliculasFav, 'Valiente', 'Cards', 'La naranja mecanica');

@@ -18,7 +18,7 @@ let veces = 0;
 setInterval(function () {
     
     veces++;
-    console.log(`Funcion ejecutada ${veces} veces`)
+    console.log(`Funcion ejecutada ${veces} veces`);
 
 }, 1000);
 

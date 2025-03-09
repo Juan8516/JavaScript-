@@ -8,7 +8,7 @@
     Preguntar a los usuarios que edad tiene el perro, y decir la edad canina
 */
 
-let edadPerro = prompt('Ingresa la edad de tu perro (en tiempo normal)');
+let edadPerro = prompt('Ingresa la edad de tu perro (en tiempo humano)');
 let convertir = edadPerro * 7;
 
 alert(`La edad canina de tu perro es: ${convertir}`);

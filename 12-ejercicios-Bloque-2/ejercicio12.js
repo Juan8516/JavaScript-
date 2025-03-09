@@ -1,7 +1,7 @@
 /*
     ----Ejercicio 12----
 
-    --Programa que pida dos numeros, y diga
+    --Programa que pida dos numeros, y diga:
     -Cual es mayor
     -Cual es menor
     -O sin son iguales

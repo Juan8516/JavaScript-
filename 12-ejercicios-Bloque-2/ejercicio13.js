@@ -7,7 +7,7 @@
 
 */
 
-const saltokangorou = 3;
+const saltoCanguro = 3;
 let distancia = 17;
 
 let distanciaRecorrida = 0;

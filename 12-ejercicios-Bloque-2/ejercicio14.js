@@ -1,7 +1,7 @@
 /*
     ----Ejercicio 14----
 
-    --Dj no sabe que genero musical poner en la fiesta:
+    --El Dj no sabe que genero musical poner en la fiesta:
     -Preguntar al usuario que genero quiere (pop, rock o rap).
     -Segun lo que prefiera devuelve un mensaje diferente.
 
@@ -24,5 +24,5 @@ switch(genero) {
         break;
 
         default:
-            console.error('Genero no encontrado !!!')
+            console.error('Genero no encontrado !!!');
 }

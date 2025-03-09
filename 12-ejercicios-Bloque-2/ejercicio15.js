@@ -2,7 +2,7 @@
     ----Ejercicio 15----
 
     --Muestra la suma y la media:
-    -De numeros ingresados por el usuario
+    -De dos numeros ingresados por el usuario
     *Hasta introducir un numero negativo.
 
 */
@@ -25,7 +25,7 @@ do {
         contador++;
     }
     
-}while(numero > 0)
+}while(numero > 0);
 
 console.log(`La suma de los valores ingresados: ${suma}`);
 console.log(`La media de los valores ingresados: ${suma / contador}`);

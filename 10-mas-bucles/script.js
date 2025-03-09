@@ -18,7 +18,7 @@
 //-----Ejemplo
 // let year = 1999;
 // let objetivo = 2177;
-// let interferencia = 2038
+// let interferencia = 2038;
 
 // while(year <= objetivo) {
 
@@ -42,7 +42,7 @@
 
         ejecutar codigo
 
-    }while(condicion)
+    }while(condicion);
 */
 
 //-----Ejemplo
