@@ -34,3 +34,30 @@ if (frase1.includes('Dios')) {
     console.log('Esa palabra no se encuentra en la frase1')
     
 }
+
+//Indexof = Busca posicion de una palabra (indice)
+let mensaje1 = 'Aprendiendo un lenguaje de programacion JavaScript';
+console.log(mensaje1.indexOf('JavaScript')); 
+
+//slice = Extre parte de un texto
+let lenguaje1 = 'Con Angular 19 a fondo';
+console.log(lenguaje1.slice(4, 11));
+console.log(lenguaje1.slice(4));
+
+//replace = reemplaza una parte de un texto, (replaceAll reemplaza todas las palabras)
+let pelicula = 'Rocky I';
+console.warn(pelicula.replace('I', 'II'));
+
+let pelicula1 = 'Rocky I, Rocky II, Rocky III';
+console.log(pelicula1);
+console.warn(pelicula1.replaceAll('Rocky', 'Padrino'));
+
+//trim = elimina espacios en blanco al inicio y final
+let email = '   juan@juan.com.co   ';
+console.log(email.trim());
+
+//split = separa cadenas por partes, y devuelve un array
+let listaCompras = 'huevos, carne, pan, mermelada, cafe, tomates, platanos';
+console.warn(listaCompras.split(','));
+
+//
