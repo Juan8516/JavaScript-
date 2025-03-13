@@ -84,9 +84,16 @@ console.log(mensaje2.startsWith("React")); // false
 
 //endstring = verifica si una cadena termina con un texto específico
 let mensaje3 = "JavaScript es poderoso";
-console.log(mensaje.endsWith("JavaScript")); // true
-console.log(mensaje.endsWith("Astro"));  // false
+console.log(mensaje3.endsWith("JavaScript")); // true
+console.log(mensaje3.endsWith("poderoso"));  // false
 
 //repeat = repite una cadena un número específico de veces
 let mensajeFinal = "Angular ";
 console.log(mensajeFinal.repeat(3)); // Output: "Angular Angular Angular "
+
+//search = busca una cadena o expresión regular dentro de un texto y devuelve la posición de la primera coincidencia.
+let miCadena = 'Trabajando con las cadenas de texto en JavaScript';
+console.log(miCadena.search('JavaScript'));
+
+//match() = busca coincidencias en una cadena usando una expresión regular y devuelve un array con los resultados.
+console.log(miCadena.match('JavaScript'));
