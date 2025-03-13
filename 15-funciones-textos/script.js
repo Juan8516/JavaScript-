@@ -39,7 +39,7 @@ if (frase1.includes('Dios')) {
 let mensaje1 = 'Aprendiendo un lenguaje de programacion JavaScript';
 console.log(mensaje1.indexOf('JavaScript')); 
 
-//slice = Extre parte de un texto
+//slice = Extrae parte de un texto
 let lenguaje1 = 'Con Angular 19 a fondo';
 console.log(lenguaje1.slice(4, 11));
 console.log(lenguaje1.slice(4));
@@ -60,4 +60,33 @@ console.log(email.trim());
 let listaCompras = 'huevos, carne, pan, mermelada, cafe, tomates, platanos';
 console.warn(listaCompras.split(','));
 
-//
+//substring = extrae una parte de una cadena según índices de inicio y fin
+let lenguaje2 = "JavaScript";
+console.log(lenguaje2.substring(0, 4)); // Output: "Java"
+
+//Formas de concatenar en JavaScript
+let pais = "Colombia";
+let ciudad = "Manizales";
+
+// Usando `+`
+console.log("Mi país es " + pais + " y mi ciudad es " + ciudad + ".");
+
+// Usando Template Strings
+console.log(`Mi país es ${pais} y mi ciudad es ${ciudad}.`);
+
+// Usando `.concat()`
+console.log("Mi país es ".concat(pais, " y mi ciudad es ", ciudad, "."));
+
+//startsWith = verifica si una cadena comienza con un texto específico
+let mensaje2 = "Angular es genial";
+console.log(mensaje2.startsWith("Angular")); // true
+console.log(mensaje2.startsWith("React")); // false
+
+//endstring = verifica si una cadena termina con un texto específico
+let mensaje3 = "JavaScript es poderoso";
+console.log(mensaje.endsWith("JavaScript")); // true
+console.log(mensaje.endsWith("Astro"));  // false
+
+//repeat = repite una cadena un número específico de veces
+let mensajeFinal = "Angular ";
+console.log(mensajeFinal.repeat(3)); // Output: "Angular Angular Angular "
