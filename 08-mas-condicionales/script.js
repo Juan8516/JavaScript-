@@ -44,7 +44,7 @@ if(miAlmuerzo == 'Bandeja') {
 }
 
 
-//Condicional ternario
+//!Condicional ternario
 //ternario: (condición ? expr1 : expr2): Forma simplificada de if-else.
 
 let nombre = 'Juan Manuel Salazar';
