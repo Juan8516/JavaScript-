@@ -24,3 +24,16 @@ console.warn(peliculas[0]);
 //Modificar nombres de un array
 nombres[4] = 'Emilio';
 console.log(nombres);
+
+//Paractica con arrays
+let nombre = parseInt(prompt('Ingresa un nombre a buscar: '));
+
+if(nombre >= nombres.length) {
+
+    alert('Usuario no encontrado !!!!');
+ 
+} else {
+
+    alert(`El usuario en la posicion es: ${nombres[nombre]}`);
+
+}
