@@ -59,7 +59,7 @@ for(let actor of actores) {
 console.log(' ');
 
 //Bucle for IN - Muestra el indice de cada elemento en el array
-console.log('-Usando el bucle for IN - Muestra el indice de cada elemento en el array');
+console.log('-Usando el bucle for IN-Muestra el indice de cada elemento en el array');
 
 for(let indice in actores) {
 
@@ -150,3 +150,49 @@ tabla.forEach((fila, indexFila) => {
 });
 
 document.write('</table>');
+console.log(' ');
+
+//Arrays tridimensionales = son estructuras que organizan datos en tres dimensiones, utilizando profundidades, filas 
+// y columnas, permitiendo una representación más compleja, como en un bloque de datos o en gráficos 3D.
+console.log('-Arrays tridimencionales');
+
+let menuRestaurante = [
+
+    ['Plato',  'Cantidad',   'Precio',                'Tamaño'],
+    ['Pizza',      4,      [10, 15, 20],  ['Pequeña', 'Mediana', 'Grande']],
+    ['Burguer',    2,      [15, 25, 30],  ['Pequeña', 'Mediana', 'Grande']],
+    ['Lasaña',     2,      [28, 35, 40],  ['Pequeña', 'Mediana', 'Grande']],
+
+];
+
+
+//Recorrido
+for(let menu of menuRestaurante) {
+
+    console.log('------------');
+
+    console.log(menu);
+
+    if(Array.isArray(menu[2]) && Array.isArray(menu[3])) {
+        console.log(menu[0]);
+
+        for(let index in menu[2]) {
+            console.log(menu[3][index], menu[2][index], 'mil pesos');
+        }
+    }
+    
+    // for(let elemento of menu) {
+
+    //     if(Array.isArray(elemento)) {
+            
+            
+    //         for(let subElemento of elemento) {
+    //             console.log(subElemento);
+    //         }
+    //     }else {
+
+    //         console.log(elemento);
+
+    //     }
+    // }
+}
