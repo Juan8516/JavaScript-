@@ -88,7 +88,65 @@ let nuevosActores = actores.map(actor => {
     return actor + ' Es un actor '
 
 })
-
 console.log(nuevosActores);
+console.log(' ');
 
+//Arrays multidimencionales - Los arrays multidimensionales son arrays que contienen otros arrays como elementos, 
+// permitiendo organizar datos de manera más compleja, como en el caso de una tabla o matriz.
+console.log('-Arrays multidimencionales');
 
+let categorias = ['Lucha', 'Carreras', 'Deportes', 'Accion', 'Sandbox'];
+let titulos = ['Dragon Ball', 'F1', 'Fifa 2025', 'God of War', 'GTA 6'];
+
+let videojuegos = [categorias, titulos];
+
+console.log(videojuegos);
+
+console.log(videojuegos[0][2]);
+console.log(videojuegos[1][2]);
+console.log(' ');
+
+//Arrays bidimencionales - Los arrays bidimensionales son un tipo de array multidimensional que organiza datos en filas y columnas, 
+// similar a una tabla.
+console.log('-Arrays bidimencionales');
+
+let tabla = [
+    
+    ['Producto', 'Cantidad', 'Precio C/U'],
+    ['PC',                5,      1600000],
+    ['Telefono',          4,      1200000],
+    ['Impresora',         2,       700000]
+
+];
+
+console.table(tabla);
+
+console.log(tabla[1][0], tabla[1][2]);
+console.log(tabla[3][0], tabla[3][2]);
+console.log(tabla[2][0], tabla[2][2]);
+console.warn(tabla[1][1] * tabla[1][2]);
+
+document.write('<table border=1>');
+
+tabla.forEach((fila, indexFila) => {
+    
+    document.write('<tr>');
+    
+    fila.forEach(elemento => {
+
+        if(indexFila === 0) {
+
+            document.write('<th>' + elemento + '</th>');
+
+        } else {
+
+            document.write('<td>' + elemento + '</td>');
+        }
+        
+    });
+
+    document.write('</tr>');
+    
+});
+
+document.write('</table>');
