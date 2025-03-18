@@ -75,7 +75,7 @@ actores.forEach((indice, actor) => {
 
     console.log(indice, actor);
 
-})
+});
 console.log(' ');
 
 //Bucle map - Recorre el array y devuelve un nuevo array no modifica el original
@@ -87,7 +87,7 @@ let nuevosActores = actores.map(actor => {
 
     return actor + ' Es un actor '
 
-})
+});
 console.log(nuevosActores);
 console.log(' ');
 
