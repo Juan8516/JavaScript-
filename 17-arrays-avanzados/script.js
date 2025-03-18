@@ -59,7 +59,7 @@ for(let actor of actores) {
 console.log(' ');
 
 //Bucle for IN - Muestra el indice de cada elemento en el array
-console.log('-Usando el bucle for IN-Muestra el indice de cada elemento en el array');
+console.log('-Usando el bucle for IN - Muestra el indice de cada elemento en el array');
 
 for(let indice in actores) {
 
