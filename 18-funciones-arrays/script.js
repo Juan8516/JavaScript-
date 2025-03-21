@@ -69,3 +69,9 @@ let articulosConO2 = articulos.filter(articulo => articulo.includes('o'))
 
 console.log(`Devolucion de los articulos con la letra "o": ${articulosConO2}`);
 console.log('');
+
+//reduce = permite recorrer un array y acumular un resultado en una sola variable.
+let reducir = articulos.reduce((total, actual) => total + ",  " + actual);
+
+console.log(`Concatena el array "articulos" separados por ", ": ${reducir}`);
+console.log('');
