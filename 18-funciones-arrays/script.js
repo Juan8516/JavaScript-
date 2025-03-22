@@ -75,3 +75,39 @@ let reducir = articulos.reduce((total, actual) => total + ",  " + actual);
 
 console.log(`Concatena el array "articulos" separados por ", ": ${reducir}`);
 console.log('');
+
+//Sort = ordena los elementos de un array alfabética o numéricamente
+articulos.sort();
+console.warn(`Ordena los elementos alfabeticamente o numericamente: ${articulos}`);
+console.log('');
+
+//reverse = invierte el orden de los elementos de un array
+let f1Teams = ['Mercedes', 'Ferrari', 'Aston Martin', 'Red Bull', 'Maclaren', 'Williams'];
+f1Teams.reverse();
+console.log(`Ordena descendentemente los elementos del array: ${f1Teams}`);
+console.log('');
+
+//concat = combina varios arrays en uno solo
+let unionArrays = articulos.concat(f1Teams);
+console.log(`Union de dos arrays devolviendo un array: ${unionArrays}`);
+console.log('');
+
+//join = convierte un array en un string, separando los elementos con un separador definido
+let usoJoin = unionArrays.join(', ')
+console.log(`Union de dos arrays separados por ', ' devolviendo un string: ${usoJoin}`);
+console.log('');
+
+//slice = devuelve una copia de una parte del array, sin modificar el original
+let miSeleccion = articulos.slice(2, 4);
+console.log(`Seleccionando una parte del array: ${miSeleccion}`);
+console.log('');
+
+//find = devuelve el primer elemento de un array que cumple con una condición dada
+let buscar = f1Teams.find(team => team.length > 8);
+console.log(`Buscar un elemento dado (primera coincidencia con las de 8 letras): ${buscar}`);
+console.log('');
+
+//findIndex = devuelve el índice del primer elemento que cumple una condición.
+let buscar1 = f1Teams.findIndex(team => team.length > 8);
+console.log(`Buscar el indice del elemento (primera coincidencia con las de 8 letras): ${buscar1}`);
+console.log('');
