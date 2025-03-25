@@ -1,5 +1,5 @@
 /*
-    ----Ejercicio 24----
+    ----Ejercicio 25----
 
     -Crear un array conn una lista de ingredientes (hamburguesas, pizza, empanadas, etc)
     
