@@ -1,0 +1,9 @@
+.cajita {
+    background-color: lightblue; /*Cambia el color de fondo del elemento seleccionado*/
+    max-width: 50%; /*Cambia el ancho máximo del elemento seleccionado*/
+    margin: 0 auto; /*Cambia el margen del elemento seleccionado */
+    padding: 35px;  /*Cambia el relleno del elemento seleccionado */
+    border: 1px solid black; /*Cambia el borde del elemento seleccionado*/
+    text-align: center; /*Cambia la alineación del texto del elemento seleccionado*/
+    font-Family: "Arial"; /*Cambia la fuente del texto del elemento seleccionado*/
+}
