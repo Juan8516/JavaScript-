@@ -21,5 +21,11 @@ caja.style.fontFamily = "Arial"; // Cambia la fuente del texto del elemento sele
 //Desde el CSS
 caja.classList.add("cajita"); // Agrega la clase "caja" al elemento seleccionado
 
+//Uso de funcion
+function cambiarColor(color, radius) {
+  caja.style.backgroundColor = color; // Cambia el color de fondo del elemento seleccionado
+  caja.style.borderRadius = radius; // Cambia el radio del borde del elemento seleccionado
+}
+
 console.log(caja.innerText); // Imprime el elemento en la consola
 
