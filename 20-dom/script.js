@@ -22,7 +22,7 @@ caja.style.fontFamily = "Arial"; // Cambia la fuente del texto del elemento sele
 caja.classList.add("cajita"); // Agrega la clase "caja" al elemento seleccionado
 
 //Crear clases desde JavaScript
-caja.className = "cajota"; // Cambia la clase del elemento seleccionado
+//caja.className = "cajota"; // Cambia la clase del elemento seleccionado
 
 //Uso de funcion
 function cambiarColor(color, radius) {
@@ -31,4 +31,29 @@ function cambiarColor(color, radius) {
 }
 
 console.log(caja.innerText); // Imprime el elemento en la consola
+
+//Recomendables
+//getElementsByClassName = Selecciona todos los elementos que tienen una clase específica
+let articulos = document.getElementsByClassName("articulo"); // Selecciona todos los elementos con la clase "article"
+console.log(articulos); // Imprime el elemento en la consola
+
+for(let i = 0; i < articulos.length; i++) {
+
+  articulos[i].classList.add("articuloBase"); // Agrega la clase "articuloBase" a cada elemento seleccionado
+  articulos[i].innerHTML += "<a href = 'https://developer.mozilla.org/es/docs/Glossary/DOM'>Mas info ... DOM</a>"
+
+  if(i === 0) {
+    articulos[i].classList.add("articuloAmarillo"); // Agrega la clase "articuloAmarillo" al primer elemento seleccionado
+  }
+
+  if(i === (articulos.length - 1)) {
+    articulos[i].classList.add("articuloUltimo"); // Agrega la clase "articuloUltimo" al ultimo elemento seleccionado
+    articulos[i].innerHTML = `<h3>Para mas del DOM en: https://developer.mozilla.org/es/docs/Glossary/DOM </h3>`; // Cambia el contenido HTML de cada elemento seleccionado
+  }
+
+}
+
+//getElementsByTagName = Selecciona todos los elementos que tienen una etiqueta específica
+//querySelector = Selecciona el primer elemento que coincide con un selector CSS especificado
+//querySelectorAll = Selecciona todos los elementos que coinciden con un selector CSS especificado
 

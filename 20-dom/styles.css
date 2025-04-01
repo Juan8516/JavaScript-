@@ -7,3 +7,21 @@
     text-align: center; /*Cambia la alineación del texto del elemento seleccionado*/
     font-Family: "Arial"; /*Cambia la fuente del texto del elemento seleccionado*/
 }
+
+.articuloBase {
+    border: 1 px solid #ccc; /*Cambia el borde del elemento seleccionado*/
+    padding: 20px; /*Cambia el relleno del elemento seleccionado*/
+    margin: 20px; /*Cambia el margen del elemento seleccionado*/
+}
+
+.articuloAmarillo {
+    background-color: yellow; /*Cambia el color de fondo del elemento seleccionado*/
+    color: black; /*Cambia el color del texto del elemento seleccionado*/
+    font-size: 20px; /*Cambia el tamaño de la fuente del texto del elemento seleccionado*/
+    font-weight: bold; /*Cambia el peso de la fuente del texto del elemento seleccionado*/
+}
+
+.articuloUltimo {
+    background-color: black; /*Cambia el color de fondo del elemento seleccionado*/
+    color: white; /*Cambia el color del texto del elemento seleccionado*/
+}
