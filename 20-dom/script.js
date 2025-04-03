@@ -65,6 +65,9 @@ for(let i = 0; i < articulos.length; i++) {
 }
 
 //getElementsByTagName = Selecciona todos los elementos que tienen una etiqueta específica
+let nuevosArticulos = document.getElementsByTagName("article"); // Selecciona todos los elementos con la etiqueta <article>
+console.log(nuevosArticulos[3]); // Imprime el elemento en la consola
+
 //querySelector = Selecciona el primer elemento que coincide con un selector CSS especificado
 //querySelectorAll = Selecciona todos los elementos que coinciden con un selector CSS especificado
 
