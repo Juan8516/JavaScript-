@@ -40,7 +40,7 @@ console.log(articulos); // Imprime el elemento en la consola
 for(let i = 0; i < articulos.length; i++) {
 
   articulos[i].classList.add("articuloBase"); // Agrega la clase "articuloBase" a cada elemento seleccionado
-  articulos[i].innerHTML += "<a href = 'https://developer.mozilla.org/es/docs/Glossary/DOM'>Mas info ... DOM</a>"
+  articulos[i].innerHTML += "<a href = 'https://developer.mozilla.org/es/docs/Glossary/DOM'>Mas info ... DOM </a>"
 
   if(i === 0) {
     articulos[i].classList.add("articuloAmarillo"); // Agrega la clase "articuloAmarillo" al primer elemento seleccionado
@@ -50,6 +50,17 @@ for(let i = 0; i < articulos.length; i++) {
     articulos[i].classList.add("articuloUltimo"); // Agrega la clase "articuloUltimo" al ultimo elemento seleccionado
     articulos[i].innerHTML = `<h3>Para mas del DOM en: https://developer.mozilla.org/es/docs/Glossary/DOM </h3>`; // Cambia el contenido HTML de cada elemento seleccionado
   }
+
+  //Añadir un nodo al DOM
+  let enlace = document.createElement("a"); // Crea un nuevo elemento <a>
+  enlace.setAttribute("href", "https://www.w3schools.com/js/js_htmldom.asp"); // Establece el atributo href del nuevo elemento <a>
+  enlace.setAttribute("target", "_blank"); // Establece el atributo target del nuevo elemento <a>
+  enlace.style.color = "green"; // Cambia el color del texto del nuevo elemento <a>
+
+  let textoEnlace = document.createTextNode(" Mas info del ... DOM"); // Crea un nuevo nodo de texto
+
+  enlace.append(textoEnlace) // Añade el nodo de texto al nuevo elemento <a>
+  articulos[i].append(enlace); // Añade el nuevo elemento <a> al elemento seleccionado
 
 }
 
