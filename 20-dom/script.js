@@ -110,3 +110,10 @@ todosArticulos.forEach((articulo, i) => {
   articulo.append(enlace); // Añade el nuevo elemento <a> al elemento seleccionado
 
 }) // Itera sobre cada elemento seleccionado
+
+//Modificadores
+const formulario = document.querySelector("#formulario"); // Selecciona el primer elemento con id "tarjeta"
+console.log(formulario); // Imprime el elemento en la consola
+formulario.textContent = "Formulario de contacto"; // Cambia el contenido de texto del elemento seleccionado
+formulario.innerHTML = "<strong>Tarjeta Debito</strong>"; // Cambia el contenido HTML del elemento seleccionado
+formulario.setAttribute("data-id", 12); // Establece el atributo data-id del elemento seleccionado
