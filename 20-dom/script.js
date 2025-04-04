@@ -69,5 +69,15 @@ let nuevosArticulos = document.getElementsByTagName("article"); // Selecciona to
 console.log(nuevosArticulos[3]); // Imprime el elemento en la consola
 
 //querySelector = Selecciona el primer elemento que coincide con un selector CSS especificado
+let seccionArticulos = document.querySelector("#articulos"); // Selecciona el primer elemento con id "articulos"
+seccionArticulos.style.backgroundColor = "lightblue"; // Cambia el color de fondo del elemento seleccionado
+seccionArticulos.style.padding = "10px"; // Cambia el relleno del elemento seleccionado
+console.log(seccionArticulos); // Imprime el elemento en la consola
+
+//--querySelector y clases
+let primerArticulo = document.querySelector(".articulo"); // Selecciona el primer elemento con la clase "articulo"
+primerArticulo.style.borderRadius = "10px"; // Cambia el radio del borde del elemento seleccionado
+console.log(primerArticulo); // Imprime el elemento en la consola
+
 //querySelectorAll = Selecciona todos los elementos que coinciden con un selector CSS especificado
 
