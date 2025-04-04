@@ -117,3 +117,6 @@ console.log(formulario); // Imprime el elemento en la consola
 formulario.textContent = "Formulario de contacto"; // Cambia el contenido de texto del elemento seleccionado
 formulario.innerHTML = "<strong>Tarjeta Debito</strong>"; // Cambia el contenido HTML del elemento seleccionado
 formulario.setAttribute("data-id", 12); // Establece el atributo data-id del elemento seleccionado
+
+//Eliminar atributos
+formulario.classList.remove("data-id"); // Elimina la clase "tarjeta" del elemento seleccionado
