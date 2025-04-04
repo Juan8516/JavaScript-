@@ -34,6 +34,7 @@ console.log(caja.innerText); // Imprime el elemento en la consola
 
 //Recomendables
 //getElementsByClassName = Selecciona todos los elementos que tienen una clase específica
+/*
 let articulos = document.getElementsByClassName("articulo"); // Selecciona todos los elementos con la clase "article"
 console.log(articulos); // Imprime el elemento en la consola
 
@@ -63,6 +64,7 @@ for(let i = 0; i < articulos.length; i++) {
   articulos[i].append(enlace); // Añade el nuevo elemento <a> al elemento seleccionado
 
 }
+*/
 
 //getElementsByTagName = Selecciona todos los elementos que tienen una etiqueta específica
 let nuevosArticulos = document.getElementsByTagName("article"); // Selecciona todos los elementos con la etiqueta <article>
@@ -74,10 +76,37 @@ seccionArticulos.style.backgroundColor = "lightblue"; // Cambia el color de fond
 seccionArticulos.style.padding = "10px"; // Cambia el relleno del elemento seleccionado
 console.log(seccionArticulos); // Imprime el elemento en la consola
 
-//--querySelector y clases
+  //--querySelector y clases
 let primerArticulo = document.querySelector(".articulo"); // Selecciona el primer elemento con la clase "articulo"
 primerArticulo.style.borderRadius = "10px"; // Cambia el radio del borde del elemento seleccionado
 console.log(primerArticulo); // Imprime el elemento en la consola
 
 //querySelectorAll = Selecciona todos los elementos que coinciden con un selector CSS especificado
+let todosArticulos = document.querySelectorAll(".articulo"); // Selecciona todos los elementos con la clase "articulo"
 
+todosArticulos.forEach((articulo, i) => {
+
+  articulo.classList.add("articuloBase"); // Agrega la clase "articuloBase" a cada elemento seleccionado
+  articulo.innerHTML += "<a href = 'https://developer.mozilla.org/es/docs/Glossary/DOM'>Mas info ... DOM </a>"
+
+  if(i === 0) {
+    articulo.classList.add("articuloAmarillo"); // Agrega la clase "articuloAmarillo" al primer elemento seleccionado
+  }
+
+  if(i === (articulos.length - 1)) {
+    articulo.classList.add("articuloUltimo"); // Agrega la clase "articuloUltimo" al ultimo elemento seleccionado
+    articulo.innerHTML = `<h3>Para mas del DOM en: https://developer.mozilla.org/es/docs/Glossary/DOM </h3>`; // Cambia el contenido HTML de cada elemento seleccionado
+  }
+
+  //Añadir un nodo al DOM
+  let enlace = document.createElement("a"); // Crea un nuevo elemento <a>
+  enlace.setAttribute("href", "https://www.w3schools.com/js/js_htmldom.asp"); // Establece el atributo href del nuevo elemento <a>
+  enlace.setAttribute("target", "_blank"); // Establece el atributo target del nuevo elemento <a>
+  enlace.style.color = "green"; // Cambia el color del texto del nuevo elemento <a>
+
+  let textoEnlace = document.createTextNode(" Mas info del ... DOM"); // Crea un nuevo nodo de texto
+
+  enlace.append(textoEnlace) // Añade el nodo de texto al nuevo elemento <a>
+  articulo.append(enlace); // Añade el nuevo elemento <a> al elemento seleccionado
+
+}) // Itera sobre cada elemento seleccionado
