@@ -34,5 +34,16 @@ console.log(navigator); // Muestra información sobre el navegador
 if(navigator.onLine) {
 
     console.log("Conectado a Internet"); // Indica si el navegador está conectado a Internet
-    
+
 }
+
+/*Location - Objeto de ubicación
+* El objeto `location` proporciona información sobre la URL actual del documento
+* y permite manipularla. Incluye propiedades como `href`, `protocol`,
+* `host`, `pathname`, y métodos como `reload()` para recargar la página actual.
+*/
+console.log(location.href); // Muestra la URL actual del documento
+console.log(location.protocol); // Muestra el protocolo de la URL actual (http: o https:)
+console.log(location.host); // Muestra el host de la URL actual (ejemplo.com)
+console.log(location.pathname); // Muestra la ruta de la URL actual (/ruta/ejemplo.html)
+//console.log(location.reload()); // Recarga la página actual
