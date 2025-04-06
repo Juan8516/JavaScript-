@@ -19,9 +19,20 @@ console.log(window.closed); // Indica si la ventana actual del navegador está c
 
 console.log(window.navigator, window.document); // Muestra información sobre el navegador y el documento actual
 
+/*
 window.setInterval(() => {
     console.log("Hola Mundo desde setInterval"); // Ejecuta una función cada 1000ms (1 segundo)
 }, 1000); // Se puede usar clearInterval para detener la ejecución de la función
+*/
 
 console.log(window.screenX); // Muestra la posición horizontal de la ventana del navegador en la pantalla
 console.log(window.screenY); // Muestra la posición vertical de la ventana del navegador en la pantalla
+
+//Navigator
+console.log(navigator); // Muestra información sobre el navegador
+
+if(navigator.onLine) {
+
+    console.log("Conectado a Internet"); // Indica si el navegador está conectado a Internet
+    
+}
