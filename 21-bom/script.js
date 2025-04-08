@@ -53,3 +53,7 @@ history.go(-1); // Regresa a la página anterior en el historial del navegador
 history.go(1); // Avanza a la siguiente página en el historial del navegador
 history.back(); // Regresa a la página anterior en el historial del navegador
 history.forward(); // Avanza a la siguiente página en el historial del navegador
+
+//screen - Objeto de pantalla
+console.log(screen.width); // Muestra el ancho de la pantalla del dispositivo
+console.log(screen.height); // Muestra la altura de la pantalla del dispositivo
