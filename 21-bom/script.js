@@ -57,3 +57,8 @@ history.forward(); // Avanza a la siguiente página en el historial del navegado
 //screen - Objeto de pantalla
 console.log(screen.width); // Muestra el ancho de la pantalla del dispositivo
 console.log(screen.height); // Muestra la altura de la pantalla del dispositivo
+
+//ventanas emergentes y pop ups
+let miWeb = window.open("https://developer.mozilla.org/es/docs/Web/JavaScript", 
+                        "Acceso a MDN",
+                        "width=850, height=500", "left=450, top=150"); // Abre una nueva ventana del navegador con la URL especificada
