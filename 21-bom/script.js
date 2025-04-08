@@ -47,3 +47,9 @@ console.log(location.protocol); // Muestra el protocolo de la URL actual (http: 
 console.log(location.host); // Muestra el host de la URL actual (ejemplo.com)
 console.log(location.pathname); // Muestra la ruta de la URL actual (/ruta/ejemplo.html)
 //console.log(location.reload()); // Recarga la página actual
+
+//History - Objeto de historial
+history.go(-1); // Regresa a la página anterior en el historial del navegador
+history.go(1); // Avanza a la siguiente página en el historial del navegador
+history.back(); // Regresa a la página anterior en el historial del navegador
+history.forward(); // Avanza a la siguiente página en el historial del navegador
