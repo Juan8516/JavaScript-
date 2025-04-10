@@ -18,3 +18,12 @@ clickBoton.addEventListener("click", (event) => {
     console.log(event.type); // Muestra el tipo de evento en la consola
     
 });
+
+//Doble click
+let clickDoble = document.querySelector("#botonDoble"); // Selecciona el primer elemento con el ID "botonDoble"
+
+clickDoble.addEventListener("dblclick", () => {
+
+    alert("Hola, has hecho doble click en el botón"); // Muestra una alerta al usuario
+
+});
