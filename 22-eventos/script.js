@@ -27,3 +27,12 @@ clickDoble.addEventListener("dblclick", () => {
     alert("Hola, has hecho doble click en el botón"); // Muestra una alerta al usuario
 
 });
+
+//Mouse Over
+let mouseOver = document.querySelector("#pasarEncima"); // Selecciona el primer elemento con el ID "pasarEncima"
+
+mouseOver.addEventListener("mouseover", () => {
+
+    alert("Hola, has pasado el mouse por encima del botón"); // Muestra una alerta al usuario
+    console.log("Hola, has pasado el mouse por encima del botón"); // Registra un mensaje en la consola
+})
