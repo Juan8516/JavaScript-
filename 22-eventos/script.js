@@ -33,7 +33,6 @@ let mouseOver = document.querySelector("#pasarEncima"); // Selecciona el primer 
 
 mouseOver.addEventListener("mouseover", () => {
 
-    alert("Hola, has pasado el mouse por encima del botón"); // Muestra una alerta al usuario
     console.log("Hola, has pasado el mouse por encima del botón"); // Registra un mensaje en la consola
 });
 
@@ -42,6 +41,14 @@ let mouseOut = document.querySelector("#pasarEncima"); // Selecciona el primer e
 
 mouseOut.addEventListener("mouseout", () => {
 
-    alert("Hola, has sacado el mouse del botón"); // Muestra una alerta al usuario
     console.log("Hola, has sacado el mouse del botón"); // Registra un mensaje en la consola    
+});
+
+//Mouse Move
+let mouseMove = document.querySelector("#pasarEncima"); // Selecciona el primer elemento con el ID "pasarEncima"
+
+mouseMove.addEventListener("mousemove", () => {
+
+    console.warn("Te estas moviendo por el textarea"); // Registra un mensaje de advertencia en la consola
+
 });
