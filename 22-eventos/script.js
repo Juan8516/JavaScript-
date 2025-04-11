@@ -52,3 +52,34 @@ mouseMove.addEventListener("mousemove", () => {
     console.warn("Te estas moviendo por el textarea"); // Registra un mensaje de advertencia en la consola
 
 });
+
+//keydown
+let keyDown = document.querySelector("#campoTexto"); // Selecciona el primer elemento con el ID "campoTexto"
+
+keyDown.addEventListener("keydown", (event) => {
+
+    console.log("Presionaste la tecla: " + event.key); // Registra un mensaje en la consola
+
+}); 
+
+//keyup
+let keyup = document.querySelector("#campoTexto"); // Selecciona el primer elemento con el ID "campoTexto"
+
+keyup.addEventListener("keyup", (event) => {
+
+    console.warn("Soltaste la tecla: " + event.key); // Registra un mensaje en la consola
+
+});
+
+//keypress - (Obsoleto / Poco Útil)
+// ❌ No detecta teclas como Shift, Ctrl, Alt, F1-F12, Esc, Arrow Keys.
+// ❌ Obsoleto (ya no se recomienda su uso en código moderno).
+// ❌ No distingue entre mayúsculas y minúsculas en algunos navegadores.
+
+let keyPress = document.querySelector("#campoTexto"); // Selecciona el primer elemento con el ID "campoTexto"
+
+keyPress.addEventListener("keypress", (event) => {
+
+    console.error("Presionaste la tecla: " + event.key); // Registra un mensaje en la consola
+
+}); // No se recomienda su uso, pero se incluye para completar el ejemplo 
