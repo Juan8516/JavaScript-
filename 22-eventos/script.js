@@ -35,4 +35,13 @@ mouseOver.addEventListener("mouseover", () => {
 
     alert("Hola, has pasado el mouse por encima del botón"); // Muestra una alerta al usuario
     console.log("Hola, has pasado el mouse por encima del botón"); // Registra un mensaje en la consola
-})
+});
+
+//Mouse Out
+let mouseOut = document.querySelector("#pasarEncima"); // Selecciona el primer elemento con el ID "pasarEncima"
+
+mouseOut.addEventListener("mouseout", () => {
+
+    alert("Hola, has sacado el mouse del botón"); // Muestra una alerta al usuario
+    console.log("Hola, has sacado el mouse del botón"); // Registra un mensaje en la consola    
+});
