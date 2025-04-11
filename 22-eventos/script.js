@@ -76,6 +76,7 @@ keyup.addEventListener("keyup", (event) => {
 // ❌ Obsoleto (ya no se recomienda su uso en código moderno).
 // ❌ No distingue entre mayúsculas y minúsculas en algunos navegadores.
 
+/*
 let keyPress = document.querySelector("#campoTexto"); // Selecciona el primer elemento con el ID "campoTexto"
 
 keyPress.addEventListener("keypress", (event) => {
@@ -83,3 +84,23 @@ keyPress.addEventListener("keypress", (event) => {
     console.error("Presionaste la tecla: " + event.key); // Registra un mensaje en la consola
 
 }); // No se recomienda su uso, pero se incluye para completar el ejemplo 
+*/
+
+//Eventos de formulario
+
+//submit
+let subirInfo = document.querySelector("#superFormulario"); // Selecciona el primer elemento con el ID "formulario"
+
+subirInfo.addEventListener("submit", () => {
+
+    event.preventDefault(); // Evita el comportamiento por defecto del formulario (enviar datos y recargar la página)
+
+    let nombre = document.querySelector("#nombre").value; // Obtiene el valor del campo de texto con el ID "nombre"
+    let correo = document.querySelector("#email").value; // Obtiene el valor del campo de texto con el ID "email"
+    let genero = document.querySelector("#genero").value; // Obtiene el valor del campo de texto con el ID "genero"
+
+    alert("Hola " + nombre + ", has enviado el formulario"); // Muestra una alerta al usuario con el nombre ingresado
+    alert("Tu correo es: " + correo); // Muestra una alerta al usuario con el correo ingresado
+    alert("Tu genero es: " + genero); // Muestra una alerta al usuario con el género ingresado
+
+}); 
