@@ -103,4 +103,13 @@ subirInfo.addEventListener("submit", () => {
     alert("Tu correo es: " + correo); // Muestra una alerta al usuario con el correo ingresado
     alert("Tu genero es: " + genero); // Muestra una alerta al usuario con el género ingresado
 
-}); 
+});
+
+//input
+let entradaNombre = document.querySelector("#nombre"); // Selecciona el primer elemento con el ID "nombre"
+
+entradaNombre.addEventListener("input", () => {
+
+    console.log("Tu nombre es: " + entradaNombre.value); // Registra un mensaje en la consola con el valor ingresado en el campo de texto
+
+}); // Agrega un evento de entrada al campo de texto "nombre"
