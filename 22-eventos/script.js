@@ -113,3 +113,12 @@ entradaNombre.addEventListener("input", () => {
     console.log("Tu nombre es: " + entradaNombre.value); // Registra un mensaje en la consola con el valor ingresado en el campo de texto
 
 }); // Agrega un evento de entrada al campo de texto "nombre"
+
+//change
+let changeGenero = document.querySelector("#genero"); // Selecciona el primer elemento con el ID "genero"
+
+changeGenero.addEventListener("change", function() {
+
+    console.log("Tu genero fue cambiado a: " + this.value); // Registra un mensaje en la consola con el valor seleccionado en el campo de texto
+
+}); // Agrega un evento de cambio al campo de texto "genero"
