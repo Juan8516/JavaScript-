@@ -122,3 +122,12 @@ changeGenero.addEventListener("change", function() {
     console.log("Tu genero fue cambiado a: " + this.value); // Registra un mensaje en la consola con el valor seleccionado en el campo de texto
 
 }); // Agrega un evento de cambio al campo de texto "genero"
+
+//Focus
+let focusEmail = document.querySelector("#email"); // Selecciona el primer elemento con el ID "email"
+
+focusEmail.addEventListener("focus", () => {
+
+    console.log("Estas en el campo de texto email"); // Registra un mensaje en la consola al enfocar el campo de texto
+
+}); // Agrega un evento de enfoque al campo de texto "email"
