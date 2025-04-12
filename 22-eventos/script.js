@@ -131,3 +131,12 @@ focusEmail.addEventListener("focus", () => {
     console.log("Estas en el campo de texto email"); // Registra un mensaje en la consola al enfocar el campo de texto
 
 }); // Agrega un evento de enfoque al campo de texto "email"
+
+//Blur
+let blurEmail = document.querySelector("#email"); // Selecciona el primer elemento con el ID "email"
+
+focusEmail.addEventListener("blur", () => {
+
+    console.log("Has salido del campo de texto email"); // Registra un mensaje en la consola al desenfocar el campo de texto
+
+}); // Agrega un evento de enfoque al campo de texto "email"
