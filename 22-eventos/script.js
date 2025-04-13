@@ -184,3 +184,9 @@ portapapeles.addEventListener("paste", () => {
     alert("Has pegado un texto"); // Muestra una alerta al usuario cuando se pega un texto");
 
 }); // Agrega un evento de pegado al elemento "portapapeles"
+
+portapapeles.addEventListener("cut", () => { // Agrega un evento de corte al elemento "portapapeles" (no hace nada en este caso)
+
+    alert("Has cortado un texto"); // Muestra una alerta al usuario cuando se corta un texto
+
+}); // Agrega un evento de corte al elemento "portapapeles"
