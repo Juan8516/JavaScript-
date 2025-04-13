@@ -1,12 +1,5 @@
 //Eventos
 
-/**
- * Selecciona todos los elementos con el ID "botocito" y les agrega un evento de click.
- * 
- * Cuando se hace clic en el botón, se muestra una alerta con el mensaje 
- * "Hola, has hecho click en el botón" y se registra el mismo mensaje en la consola.
- *
- */
 let clickBoton = document.querySelector("#boton"); // Selecciona el primer elemento con el ID "boton"
 
 clickBoton.addEventListener("click", (event) => {
@@ -166,5 +159,12 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
 
-    console.warn("La ventana ha sido redimensionada", window.innerWidth + " " +window.innerHeight); // Registra un mensaje de advertencia en la consola cuando la ventana ha sido redimensionada
-});
+    console.warn("La ventana ha sido redimensionada "+ window.innerWidth + " " +window.innerHeight); // Registra un mensaje de advertencia en la consola cuando la ventana ha sido redimensionada
+
+}); // Se ejecuta cuando la ventana ha sido redimensionada (cambiada de tamaño)
+
+window.addEventListener("scroll", () => {
+
+    console.error("La página ha sido desplazada al pixel " + Math.round(window.scrollY)); // Registra un mensaje de error en la consola cuando la página ha sido desplazada
+
+}); // Se ejecuta cuando la página se desplaza (scroll) y no hace nada en este caso
