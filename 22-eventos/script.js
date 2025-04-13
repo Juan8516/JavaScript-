@@ -168,3 +168,13 @@ window.addEventListener("scroll", () => {
     console.error("La página ha sido desplazada al pixel " + Math.round(window.scrollY)); // Registra un mensaje de error en la consola cuando la página ha sido desplazada
 
 }); // Se ejecuta cuando la página se desplaza (scroll) y no hace nada en este caso
+
+//Eventos de portapapeles
+
+let copiarTexto = document.querySelector("#portapapeles"); // Selecciona el primer elemento con el ID "portapapeles"
+
+copiarTexto.addEventListener("copy", () => {
+
+    alert("Accion no permitida, no puedes copiar el texto"); // Muestra una alerta al usuario cuando se intenta copiar el texto
+    
+}); // Agrega un evento de copia al elemento "portapapeles"
