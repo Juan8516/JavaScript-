@@ -163,3 +163,8 @@ window.addEventListener("load", () => {
     console.warn("La página y todos sus recursos han sido completamente cargados"); // Registra un mensaje de advertencia en la consola cuando la página y todos sus recursos han sido completamente cargados
 
 }); // Se ejecuta cuando la página y todos sus recursos (imágenes, scripts, etc.) han sido completamente cargados
+
+window.addEventListener("resize", () => {
+
+    console.warn("La ventana ha sido redimensionada", window.innerWidth + " " +window.innerHeight); // Registra un mensaje de advertencia en la consola cuando la ventana ha sido redimensionada
+});
