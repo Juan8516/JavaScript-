@@ -171,10 +171,16 @@ window.addEventListener("scroll", () => {
 
 //Eventos de portapapeles
 
-let copiarTexto = document.querySelector("#portapapeles"); // Selecciona el primer elemento con el ID "portapapeles"
+let portapapeles = document.querySelector("#portapapeles"); // Selecciona el primer elemento con el ID "portapapeles"
 
-copiarTexto.addEventListener("copy", () => {
+portapapeles.addEventListener("copy", () => {
 
     alert("Accion no permitida, no puedes copiar el texto"); // Muestra una alerta al usuario cuando se intenta copiar el texto
-    
+
 }); // Agrega un evento de copia al elemento "portapapeles"
+
+portapapeles.addEventListener("paste", () => {
+
+    alert("Has pegado un texto"); // Muestra una alerta al usuario cuando se pega un texto");
+
+}); // Agrega un evento de pegado al elemento "portapapeles"
