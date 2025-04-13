@@ -142,9 +142,24 @@ focusEmail.addEventListener("blur", () => {
 }); // Agrega un evento de enfoque al campo de texto "email"
 
 //Eventos del documento y la ventana
+
+/*
+    Observaciones:
+    ⚡ Usa DOMContentLoaded para código que debe ejecutarse lo antes posible (sin esperar recursos).
+
+    ⚡Usa load solo si necesitas trabajar con elementos que dependen de recursos externos (ej: medir el tamaño de una imagen).
+
+    Tip moderno: Es mejor usar hoy defer en los <script> en lugar de DOMContentLoaded.
+*/
 document.addEventListener("DOMContentLoaded", () => {
 
     //Aqui se hace todo el codigo
     console.log("El DOM ha sido completamente cargado y analizado"); // Registra un mensaje en la consola cuando el DOM ha sido completamente cargado
 
 }); // Se ejecuta cuando el DOM ha sido completamente cargado y analizado
+
+window.addEventListener("load", () => {
+
+    console.warn("La página y todos sus recursos han sido completamente cargados"); // Registra un mensaje de advertencia en la consola cuando la página y todos sus recursos han sido completamente cargados
+
+}); // Se ejecuta cuando la página y todos sus recursos (imágenes, scripts, etc.) han sido completamente cargados
