@@ -140,3 +140,11 @@ focusEmail.addEventListener("blur", () => {
     console.log("Has salido del campo de texto email"); // Registra un mensaje en la consola al desenfocar el campo de texto
 
 }); // Agrega un evento de enfoque al campo de texto "email"
+
+//Eventos del documento y la ventana
+document.addEventListener("DOMContentLoaded", () => {
+
+    //Aqui se hace todo el codigo
+    console.log("El DOM ha sido completamente cargado y analizado"); // Registra un mensaje en la consola cuando el DOM ha sido completamente cargado
+
+}); // Se ejecuta cuando el DOM ha sido completamente cargado y analizado
