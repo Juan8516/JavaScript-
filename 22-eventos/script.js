@@ -190,3 +190,18 @@ portapapeles.addEventListener("cut", () => { // Agrega un evento de corte al ele
     alert("Has cortado un texto"); // Muestra una alerta al usuario cuando se corta un texto
 
 }); // Agrega un evento de corte al elemento "portapapeles"
+
+portapapeles.addEventListener("contextmenu", () => { // Agrega un evento de menú contextual al elemento "portapapeles"
+
+    console.warn("Has hecho click derecho"); // Registra un mensaje de advertencia en la consola cuando se hace click derecho
+
+}); // Agrega un evento de menú contextual al elemento "portapapeles"
+
+portapapeles.addEventListener("contextmenu", () => { // Agrega un evento de menú contextual al elemento "portapapeles"
+
+    event.preventDefault(); // Evita el comportamiento por defecto del menú contextual (click derecho)
+    
+    console.warn("Has hecho click derecho"); // Registra un mensaje de advertencia en la consola cuando se hace click derecho
+
+}); // Agrega un evento de menú contextual al elemento "portapapeles"
+
