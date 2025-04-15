@@ -222,3 +222,19 @@ setTimeout(() => { // Espera 5 segundos antes de ejecutar la función
     alert("El boton ha sido desactivado"); // Muestra una alerta al usuario
 
 }, 5000); // Espera 5 segundos antes de ejecutar la función
+
+//Propagacion de eventos
+let cajaPadre = document.querySelector("#cajaPadre"); // Selecciona el primer elemento con el ID "cajaPadre"
+let botonHijo = document.querySelector("#botonHijo"); // Selecciona el primer elemento con el ID "botonHijo"
+
+cajaPadre.addEventListener("click", () => {
+
+    alert("Hola, has hecho click en la caja padre"); // Muestra una alerta al usuario
+});
+
+botonHijo.addEventListener("click", (event) => {
+
+    event.stopPropagation(); // Detiene la propagación del evento hacia el elemento padre
+    alert("Hola, has hecho click en el botón hijo"); // Muestra una alerta al usuario
+
+}); // Agrega un evento de click al elemento "botonHijo" que detiene la propagación del evento hacia el elemento padre
