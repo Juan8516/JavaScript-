@@ -205,19 +205,3 @@ portapapeles.addEventListener("contextmenu", () => { // Agrega un evento de men�
 
 }); // Agrega un evento de menú contextual al elemento "portapapeles"
 
-//Dejar de escuchar eventos
-let clickBoton2 = document.querySelector("#boton2"); // Selecciona el primer elemento con el ID "boton"
-
-function alertaDesactivacion() { // Función que muestra una alerta al usuario
-
-    alert("Hola, has hecho click en el botón2"); // Muestra una alerta al usuario
-    
-}
-
-clickBoton2.addEventListener("click", alertaDesactivacion); // Agrega un evento de click al elemento "boton2" que llama a la función alertaDesactivacion
-
-setTimeout(() => { // Espera 5 segundos antes de ejecutar la función
-
-    alert("El boton ha sido desactivado"); // Muestra una alerta al usuario
-
-}, 5000); // Espera 5 segundos antes de ejecutar la función
