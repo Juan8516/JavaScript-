@@ -14,3 +14,24 @@
  Al hacer click otra vez, el semaforo cambia a verde.
 */
 
+let boton = document.querySelector("#btnSemaforo");
+let luces = document.querySelectorAll(".luz");
+let indice = 0;
+
+boton.addEventListener("click", () => {
+
+    // Retirar las luces activas
+    luces.forEach(luz => luz.classList.remove("activa"));
+
+    // Encender una luz
+    luces[indice].classList.add("activa");
+
+    // Cambiar el indice de la luz activa
+    indice++;
+
+    // Si el indice es mayor que 2, reiniciar a 0
+    if(indice > 2) {
+        indice = 0;
+    }
+
+});
