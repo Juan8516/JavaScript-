@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/23-ejercicios-Bloque-4/ejercicio38/ejercicio38.js" defer></script>
+    <link rel="stylesheet" href="/23-ejercicios-Bloque-4/ejercicio38/02styles.css">
+    <title>Ejercicio 38</title>
+</head>
+<body>
+
+    <h1>Validacion de Formulario</h1>
+
+    <div class="estilosFormulario">
+
+        <form id = formulario>
+            <label for="fnombre">Nombre: </label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            
+            <label for="fapellidos">Apellidos: </label>
+            <input type="text" id="apellidos" placeholder="Apellidos" required>
+
+            <label for="fedad">Edad: </label>
+            <input type="text" id="edad" placeholder="Edad" required>
+            
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
+    </div>
+
+    <div class="info_contacto">
+
+        <h3>Informacion de registro</h3>
+        <hr>
+
+        <p id="info_nombre">
+            Nombre: <strong></strong>
+        </p>
+
+        <p id="info_apellidos">
+            Apellidos: <strong></strong>
+        </p>
+
+        <p id="info_edad">
+            Edad: <strong></strong>
+        </p>
+    </div>
+    
+</body>
+</html>
