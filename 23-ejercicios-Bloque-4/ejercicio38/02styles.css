@@ -1,6 +1,6 @@
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: monserrat, sans-serif;
 }
 
 h1 {
@@ -15,7 +15,6 @@ h1 {
     margin: 20px auto;
     width: 300px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .estilosFormulario input {
