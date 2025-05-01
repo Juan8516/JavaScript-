@@ -8,6 +8,12 @@ let pelicula = {
     director: "Francis Ford Coppola",
     anio: 1972,
     genero: "Drama",
+    descripcion: function () {
+        // this: se refiere al contexto actual en el que se ejecuta el código. En este caso, 
+        // `this.titulo`, `this.anio` y `this.director` acceden a las propiedades del objeto al que pertenece el método 
+        // donde está esta línea de código. Es decir, `this` apunta al objeto que contiene este método.
+        return `${this.titulo} es una película de ${this.anio} dirigida por ${this.director}.`;
+    }
 };
 
 // Acceder a las propiedades del objeto utilizando la notación de punto o la notación de corchetes.
@@ -17,7 +23,21 @@ console.log(
 
     //segunda forma de acceder a las propiedades del objeto
     pelicula["protagonista"], // Marlon Brando
+
+    //Llamado de todo el objeto
+    pelicula,
 );
+
+// Modificar propiedades del objeto utilizando la notación de punto(modifica el objeto original).
+pelicula.protagonista = "Al Pacino";
+console.log(pelicula.protagonista); // Al Pacino
+
+// Agregar un propiedad al objeto utilizando la notación de punto.
+pelicula.secuela = "El Padrino II";
+console.log(pelicula.secuela); // El Padrino II
+
+// Llamar al método `descripcion` del objeto `pelicula` para obtener una descripción de la película.
+console.log(pelicula.descripcion());
 
 
 //JSON: JavaScript Object Notation. Es un formato de intercambio de datos ligero y fácil de leer y escribir para humanos y 
