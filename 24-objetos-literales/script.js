@@ -6,6 +6,7 @@ let pelicula = {
     titulo: "El Padrino",
     protagonista: "Marlon Brando",
     director: "Francis Ford Coppola",
+    elenco: ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton", "Robert Duvall"],
     anio: 1972,
     genero: "Drama",
     descripcion: function () {
@@ -13,6 +14,20 @@ let pelicula = {
         // `this.titulo`, `this.anio` y `this.director` acceden a las propiedades del objeto al que pertenece el método 
         // donde está esta línea de código. Es decir, `this` apunta al objeto que contiene este método.
         return `${this.titulo} es una película de ${this.anio} dirigida por ${this.director}.`;
+    },
+    mostrarElenco: function () {
+        
+        console.log("Elenco de actores:");
+
+        this.elenco.forEach(nombre => {
+            console.log(nombre);
+        });
+    },
+    detalles: {
+        duracion: 175, // Duración en minutos
+        calificacion: "R", // Clasificación por edades
+        idiomaOriginal: "Inglés",
+        paisDeProduccion: "Estados Unidos",
     }
 };
 
@@ -37,8 +52,22 @@ pelicula.secuela = "El Padrino II";
 console.log(pelicula.secuela); // El Padrino II
 
 // Llamar al método `descripcion` del objeto `pelicula` para obtener una descripción de la película.
+console.log(" ");
 console.log(pelicula.descripcion());
 
+// Llamar al método `mostrarElenco` del objeto `pelicula` para mostrar el elenco de actores.
+console.log(" ");
+console.log(pelicula.mostrarElenco());
+
+// Llamar a la propiedad `detalles` del objeto `pelicula` para acceder a información adicional sobre la película.
+console.log(" ");
+console.log(pelicula.detalles);
+console.log(pelicula.detalles.duracion); // 175
+console.log(pelicula.detalles.calificacion); // R
+
+// Eliminar una propiedad del objeto utilizando la palabra clave `delete`.
+delete pelicula.genero;
+console.log(pelicula); // {titulo: "El Padrino", protagonista: "Al Pacino", director: "Francis Ford Coppola", elenco: Array(5), anio: 1972, …}
 
 //JSON: JavaScript Object Notation. Es un formato de intercambio de datos ligero y fácil de leer y escribir para humanos y 
 //máquinas. Se utiliza comúnmente para enviar datos entre un servidor y un cliente web. JSON es un subconjunto de la 
