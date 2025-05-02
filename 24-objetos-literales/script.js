@@ -90,3 +90,6 @@ console.log(" ");
 
 let palaDePadelJSON = JSON.stringify(palaDePadel); // Convierte el objeto a una cadena JSON.
 console.log(palaDePadelJSON);
+
+let objetoConvertido = JSON.parse(palaDePadelJSON); // Convierte la cadena JSON de nuevo a un objeto.
+console.log(objetoConvertido); // {marca: "Bullpadel", modelo: "Hack", peso: 360, materialMarco: "Carbono", materialNucleo: "Eva"}
