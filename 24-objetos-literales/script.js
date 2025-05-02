@@ -68,9 +68,25 @@ console.log(pelicula.detalles.calificacion); // R
 // Eliminar una propiedad del objeto utilizando la palabra clave `delete`.
 delete pelicula.genero;
 console.log(pelicula); // {titulo: "El Padrino", protagonista: "Al Pacino", director: "Francis Ford Coppola", elenco: Array(5), anio: 1972, …}
+console.log(" ");
 
 //JSON: JavaScript Object Notation. Es un formato de intercambio de datos ligero y fácil de leer y escribir para humanos y 
-//máquinas. Se utiliza comúnmente para enviar datos entre un servidor y un cliente web. JSON es un subconjunto de la 
-// sintaxis de objetos literales de JavaScript, pero tiene algunas diferencias clave, como el uso de comillas dobles para l
-// as claves y los valores de cadena, y no permite funciones o propiedades que no sean cadenas. JSON es independiente del 
+//máquinas. 
+// Se utiliza comúnmente para enviar datos entre un servidor y un cliente web. JSON es un subconjunto de la 
+// sintaxis de objetos literales de JavaScript, pero tiene algunas diferencias clave, como el uso de comillas dobles para 
+// las claves y los valores de cadena, y no permite funciones o propiedades que no sean cadenas. JSON es independiente del 
 // lenguaje, lo que significa que se puede utilizar en otros lenguajes de programación además de JavaScript.
+
+let palaDePadel = {
+    marca: "Bullpadel",
+    modelo: "Hack",
+    peso: 360,
+    materialMarco: "Carbono",
+    materialNucleo: "Eva"
+};
+
+console.log(palaDePadel);
+console.log(" ");
+
+let palaDePadelJSON = JSON.stringify(palaDePadel); // Convierte el objeto a una cadena JSON.
+console.log(palaDePadelJSON);
