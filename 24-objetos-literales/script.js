@@ -93,3 +93,13 @@ console.log(palaDePadelJSON);
 
 let objetoConvertido = JSON.parse(palaDePadelJSON); // Convierte la cadena JSON de nuevo a un objeto.
 console.log(objetoConvertido); // {marca: "Bullpadel", modelo: "Hack", peso: 360, materialMarco: "Carbono", materialNucleo: "Eva"}
+
+// Recordar que JSON es un formato de intercambio de datos, no un objeto JavaScript.
+
+let caja = document.querySelector("#datos");
+
+for(let index in palaDePadel){
+
+    caja.innerHTML += `<p>${index}: ${palaDePadel[index]}</p>`; // Agregar los datos al HTML
+
+} // Agregar los datos al HTML
