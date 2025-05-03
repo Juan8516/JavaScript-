@@ -41,7 +41,8 @@ class Gato {
         return this.edad; // Método de instancia
     }
 
-    //metodos estaticos
+    //metodos estaticos: Los métodos estáticos son funciones asociadas a la clase (no a instancias) 
+    // que se llaman directamente desde la clase, sin necesidad de crear un objeto.
     static info() {
         console.log("Los gatos son animales domésticos muy populares."); // Método estático
     }
