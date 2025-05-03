@@ -3,6 +3,7 @@
 // instancias de clases. Estos objetos encapsulan datos (propiedades) y 
 // comportamientos (métodos).
 
+// En JavaScript, la POO se puede implementar utilizando clases y objetos.
 class Gato {
     //Propiedades o atributos
     constructor(nombre, edad, raza) {
@@ -20,3 +21,11 @@ class Gato {
         console.log(`Hola, soy ${this.nombre}, tengo ${this.edad} años y soy de la raza ${this.raza}.`); // Método de instancia
     }
 }
+
+let miGato1 = new Gato("Tanque", 2, "Siames"); // Crear una instancia de la clase Gato
+miGato1.maullar(); // Llamar al método maullar
+miGato1.presentar(); // Llamar al método presentar
+
+let miGato2 = new Gato("Mimi", 3, "Persa"); // Crear otra instancia de la clase Gato
+miGato2.maullar(); // Llamar al método maullar  
+miGato2.presentar(); // Llamar al método presentarse
