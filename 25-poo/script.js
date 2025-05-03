@@ -76,3 +76,33 @@ console.log("");
 //metodos estaticos
 Gato.info(); // Llamar al método estático info de la clase Gato
 Gato.infoRaza("Siames"); // Llamar al método estático infoRaza de la clase Gato
+console.log("");
+
+// Herencia: La herencia permite crear nuevas clases basadas en clases existentes,
+// heredando sus propiedades y métodos. Esto promueve la reutilización del código y la creación de jerarquías de clases.
+// En JavaScript, la herencia se puede implementar utilizando la palabra clave extends.
+
+class SuperGato extends Gato {
+    // La clase SuperGato hereda de la clase Gato
+    // Propiedades o atributos adicionales
+    constructor(nombre, edad, raza, superpoder) {
+        super(nombre, edad, raza); // Llamar al constructor de la clase padre (Gato)
+        this.superpoder = superpoder; // Propiedad adicional de la subclase
+    }
+
+    setSuperpoder(nuevoSuperpoder) {
+        this.superpoder = nuevoSuperpoder; // Método de instancia
+    }
+
+    getSuperpoder() {
+        return this.superpoder; // Método de instancia
+    }
+
+    mostrarSuperpoder() {
+        console.log(`${this.nombre} tiene el superpoder de ${this.superpoder}.`); // Método de instancia
+    }
+}
+
+let miSuperGato = new SuperGato("Manolo", 1, "Persa", "volar"); // Crear una instancia de la clase SuperGato
+miSuperGato.maullar(); // Llamar al método maullar de la clase padre (Gato)
+miSuperGato.mostrarSuperpoder(); // Llamar al método mostrarSuperpoder de la clase SuperGato 
