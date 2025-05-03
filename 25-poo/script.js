@@ -29,12 +29,25 @@ class Gato {
         this.raza = nuevaRaza; // Método de instancia
     }
 
+    // set es un método que asigna/modifica un valor (guardarEdad actualiza this.edad).
+    // get es un método que obtiene/retorna un valor (sacarEdad devuelve this.edad).
+    // (En este caso: set guarda una nueva edad y get recupera la edad almacenada).
+
     set guardarEdad(nuevaEdad) {
         this.edad = nuevaEdad; // Método de instancia
     }
 
     get sacarEdad() {
         return this.edad; // Método de instancia
+    }
+
+    //metodos estaticos
+    static info() {
+        console.log("Los gatos son animales domésticos muy populares."); // Método estático
+    }
+
+    static infoRaza(raza) {
+        console.log(`La raza ${raza} es conocida por su belleza y carácter.`); // Método estático
     }
 
 }
@@ -57,3 +70,8 @@ console.log("");
 
 miGato1.guardarEdad = 4; // Cambiar la edad del gato utilizando el setter
 console.log(miGato1.sacarEdad); // Llamar al método getRaza para obtener la raza del gato
+console.log("");
+
+//metodos estaticos
+Gato.info(); // Llamar al método estático info de la clase Gato
+Gato.infoRaza("Siames"); // Llamar al método estático infoRaza de la clase Gato
