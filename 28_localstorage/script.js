@@ -38,3 +38,13 @@ localStorage.setItem("animal", JSON.stringify(animal)); //convertir objeto a str
 //Recuperar objeto de localStorage
 let animalRecuperado = JSON.parse(localStorage.getItem("animal")); //convertir string a objetos
 console.log(animalRecuperado); //Objeto recuqperado
+
+//Eliminar un elemento de localStorage
+localStorage.removeItem("animal"); //eliminar objeto//
+
+//vaciar localStorage
+document.querySelector("#vaciar").addEventListener("click", () => {
+
+    localStorage.clear(); //vaciar localStorage
+    
+});
