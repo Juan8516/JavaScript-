@@ -123,14 +123,25 @@ function guardarPelicula() {
     
     
     return true; // Devuelve verdadero para indicar que la funcion se ha ejecutado correctamente
-}
+}// Funcion para guardar la pelicula
 
-let formulario = document.querySelector("#formulario"); // Selecciona el formulario por su id
+//Carga automatica de peliculas al abrir la web
+window.addEventListener("load", () => { // Cuando se carga la pagina
 
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault(); // Evita que se recargue la pagina al enviar el formulario
+    //Cargar las peliculas guardadas
+    mostrarPeliculas(); // Llama a la funcion mostrarPeliculas para mostrar las peliculas guardadas
+
+    //Aplicar la funcion para mostrar las peliculas
+    let formulario = document.querySelector("#formulario"); // Selecciona el formulario por su id
+
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault(); // Evita que se recargue la pagina al enviar el formulario
+    
+        guardarPelicula(); // Llama a la funcion guardarPelicula
+
+    })//Funcion para eliminar peliculas
 
 
+}) //Funcion para eliminar peliculas
 
-    guardarPelicula(); // Llama a la funcion guardarPelicula
-})
+
