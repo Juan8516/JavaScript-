@@ -19,3 +19,77 @@ Tareas:
 -Ejercicio 42: Haz que las peliculas carguen automaticamente al abrir la web
 -Ejercicio 43: Funcion para eliminar peliculas.
 */
+
+function mostrarPeliculas() {
+    console.log("Mostrar peliculas"); // Muestra un mensaje en la consola
+} // Funcion para mostrar las peliculas guardadas
+
+function guardarPelicula() {
+
+    //seleccionar la caja de text y sacar el valor
+    let campoTitulo = document.querySelector("#titulo"); // Selecciona el campo de texto por su id
+    let titulo = campoTitulo.value; // Obtiene el valor del campo de texto
+
+
+    //Validacion de que el campo no este vacio
+    if(titulo.trim() === "") { // Si el campo de texto esta vacio
+
+        alert("El campo no puede estar vacio"); // Muestra un mensaje de alerta
+        return false; // Sale de la funcion
+
+    }
+
+    //Conseguir fecha actual
+    const fecha = new Date(); // Crea un nuevo objeto de fecha con la fecha y hora actuales
+    const fechaGuardado = fecha.toLocaleDateString(); // Convierte la fecha a una cadena de texto en el formato local (dd/mm/aaaa)
+
+    console.log(fechaGuardado); // Muestra la fecha en la consola
+    
+    //Generar puntuacion aleatoria entre 1 y 100
+    let popularidad = Math.floor(Math.random() * 100) + 1; // Genera un numero aleatorio entre 1 y 100
+
+    console.log(popularidad); // Muestra la puntuacion en la consola
+
+    //Crear objeto pelicula con los datos necesarios
+    let pelicula = { // Crea un objeto pelicula con los datos necesarios
+        titulo, // Asigna el valor del campo de texto al objeto
+        fecha: fechaGuardado, // Asigna la fecha guardada al objeto
+        popularidad // Asigna la puntuacion aleatoria al objeto
+    }
+
+    console.log(pelicula); // Muestra el objeto pelicula en la consola
+
+    //Sacar todos las peliculas (array de objetos) del localStorage
+    let peliculasGuardadas = JSON.parse(localStorage.getItem("peliculas")) || []; // Intenta obtener el array de objetos del localStorage, si no existe, crea un array vacio
+    
+    if(!peliculasGuardadas) { // Si no hay peliculas guardadas
+        
+        peliculasGuardadas = []; // Crea un array vacio
+
+    }
+
+    //Añadir la nueva pelicula al array de objetos
+    peliculasGuardadas.push(pelicula); // Añade la nueva pelicula al array de objetos
+
+    //Guardar todo en el localStorage
+    localStorage.setItem("peliculas", JSON.stringify(peliculasGuardadas)); // Guarda el array de objetos en el localStorage como una cadena de texto
+
+    //Limpiar el campo de texto
+    campoTitulo.value = ""; // Limpia el campo de texto
+
+    //Mostrar las peliculas en la pantalla
+    mostrarPeliculas(); // Llama a la funcion mostrarPeliculas
+    
+    
+    return true; // Devuelve verdadero para indicar que la funcion se ha ejecutado correctamente
+}
+
+let formulario = document.querySelector("#formulario"); // Selecciona el formulario por su id
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault(); // Evita que se recargue la pagina al enviar el formulario
+
+
+
+    guardarPelicula(); // Llama a la funcion guardarPelicula
+})
