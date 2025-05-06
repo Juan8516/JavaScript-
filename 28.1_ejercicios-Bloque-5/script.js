@@ -15,13 +15,53 @@ y se debe eliminar cualquiera de ellas de la lista de peliculas guardadas
 Tareas:
 -Ejercicio 39: Crear el formulario necesario para añadir una pelicula
 -Ejercicio 40: Funcion para guardar la pelicula con los datos necesarios
--Ejercicio 41: Funcion para mostrar peliculas extraidos del localStorage
+-Ejercicio 41: Funcion para mostrar peliculas extraidas del localStorage
 -Ejercicio 42: Haz que las peliculas carguen automaticamente al abrir la web
 -Ejercicio 43: Funcion para eliminar peliculas.
 */
 
 function mostrarPeliculas() {
-    console.log("Mostrar peliculas"); // Muestra un mensaje en la consola
+
+    //Seleccionar la etiqueta del listado
+    let listado = document.querySelector("#listado"); // Selecciona la etiqueta del listado por su id
+    listado.innerHTML = ""; // Limpia el contenido del listado
+
+    //Sacar las peliculas del localStorage
+    let peliculasGuardadas = JSON.parse(localStorage.getItem("peliculas")); // Intenta obtener el array de objetos del localStorage, si no existe, crea un array vacio
+    
+    //Si no hay peliculas, mostrar mensaje
+    if(peliculasGuardadas.length === 0) {
+
+        listado.innerHTML = "<p>No hay peliculas guardadas</p>"; // Muestra un mensaje si no hay peliculas guardadas
+        
+        return false; // Sale de la funcion
+
+    }
+
+    //Recorrer el array de objetos y mostrar las peliculas
+    peliculasGuardadas.forEach((pelicula, indice) => {
+
+        const peliArticle = document.createElement("article"); // Crea un nuevo elemento article
+
+        peliArticle.innerHTML = `
+
+            <h3>${pelicula.titulo}</h3> <!-- Muestra el titulo de la pelicula -->
+            <p>Fecha de guardado: ${pelicula.fecha}</p> <!-- Muestra la fecha de guardado de la pelicula -->
+            <p>Popularidad: ${pelicula.popularidad}</p> <!-- Muestra la puntuacion de popularidad de la pelicula -->
+            <p>
+                <button id="eliminar" data-id="${indice}">Eliminar</button> <!-- Crea un boton para eliminar la pelicula -->
+            </p>
+
+            <hr> <!-- Crea una nueva linea -->
+        `;
+
+        listado.appendChild(peliArticle); // Añade el nuevo elemento article al listado
+        
+    });
+
+    return false; // Sale de la funcion
+
+
 } // Funcion para mostrar las peliculas guardadas
 
 function guardarPelicula() {
@@ -35,6 +75,7 @@ function guardarPelicula() {
     if(titulo.trim() === "") { // Si el campo de texto esta vacio
 
         alert("El campo no puede estar vacio"); // Muestra un mensaje de alerta
+
         return false; // Sale de la funcion
 
     }
