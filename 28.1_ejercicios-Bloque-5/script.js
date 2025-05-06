@@ -20,6 +20,22 @@ Tareas:
 -Ejercicio 43: Funcion para eliminar peliculas.
 */
 
+function eliminar(indice) {
+
+    //Sacar las peliculas del localStorage
+    let peliculasGuardadas = JSON.parse(localStorage.getItem("peliculas")); // Intenta obtener el array de objetos del localStorage, si no existe, crea un array vacio
+    
+    //Eliminar la pelicula del array de objetos
+    peliculasGuardadas.splice(indice, 1); // Elimina la pelicula del array de objetos en la posicion indicada por el indice
+
+    //Actualizar el localStorage
+    localStorage.setItem("peliculas", JSON.stringify(peliculasGuardadas)); // Guarda el array de objetos en el localStorage como una cadena de texto
+
+    //Mostrar las peliculas en la pantalla
+    mostrarPeliculas(); // Llama a la funcion mostrarPeliculas para mostrar las peliculas guardadas
+
+} // Funcion para eliminar peliculas
+
 function mostrarPeliculas() {
 
     //Seleccionar la etiqueta del listado
@@ -48,13 +64,16 @@ function mostrarPeliculas() {
             <h3>${pelicula.titulo}</h3> <!-- Muestra el titulo de la pelicula -->
             <p>Fecha de guardado: ${pelicula.fecha}</p> <!-- Muestra la fecha de guardado de la pelicula -->
             <p>Popularidad: ${pelicula.popularidad}</p> <!-- Muestra la puntuacion de popularidad de la pelicula -->
-            <p>
-                <button id="eliminar" data-id="${indice}">Eliminar</button> <!-- Crea un boton para eliminar la pelicula -->
-            </p>
-
-            <hr> <!-- Crea una nueva linea -->
         `;
 
+        //Crear boton de eliminar
+        const btnEliminar = document.createElement("button"); // Crea un nuevo elemento button
+        btnEliminar.textContent = "Eliminar"; // Asigna el texto al boton
+        btnEliminar.addEventListener("click", () => eliminar(indice)); // Añade un evento al boton
+
+        peliArticle.appendChild(btnEliminar); // Añade el boton al elemento article
+        peliArticle.appendChild(document.createElement("hr")); // Añade una linea horizontal al elemento article
+        
         listado.appendChild(peliArticle); // Añade el nuevo elemento article al listado
         
     });
