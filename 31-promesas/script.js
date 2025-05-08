@@ -65,6 +65,7 @@ function servirPuntaDeAnca() {
     });
 }
 
+/*
 servirPizza()
             .then(resultado1 => {
                 console.log(resultado1); // Se ejecuta cuando la pizza está lista
@@ -80,3 +81,33 @@ servirPizza()
             .catch(error => {
                 console.error("Error en el pedido revisar:", error); // Maneja cualquier error en la cadena de promesas
             });
+*/
+
+//Async/Await: Sintaxis más limpia para trabajar con promesas, permitiendo escribir código asíncrono de 
+// manera más legible y similar al código síncrono.
+
+async function realizarPedido() {
+    try {
+        const resultado1 = await servirPizza(); // Espera a que la pizza esté lista
+        console.log(resultado1); // Muestra el resultado de la pizza
+
+        if(resultado1 != "Pizza rista") {
+            // Si la pizza no está lista, lanza un error
+            throw new Error("Error: La pizza no está lista."); // Lanza un error si la pizza no está lista
+        } else {
+            console.log("La pizza está lista"); // Muestra un mensaje si la pizza está lista
+        }
+        // Si la pizza está lista, continúa con el pedido
+
+        const resultado2 = await servirHamburguesa(); // Espera a que la hamburguesa esté lista
+        console.log(resultado2); // Muestra el resultado de la hamburguesa
+
+        const resultado3 = await servirPuntaDeAnca(); // Espera a que la punta de anca esté lista
+        console.log(resultado3); // Muestra el resultado de la punta de anca
+
+    } catch (error) {
+        console.error("Error en el pedido revisar:", error); // Maneja cualquier error en el pedido
+    }
+}
+
+realizarPedido(); // Llama a la función para realizar el pedido
