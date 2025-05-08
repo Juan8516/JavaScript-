@@ -44,3 +44,39 @@ miPromesa
 alert("Hola");
 alert("Soy Juan Manuel");
 alert("Salazar");
+
+//Promesas encadenadas
+function servirPizza() {
+
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Pizza lista"), 15000); // Simula un retraso de 15 segundos
+    });
+}
+
+function servirHamburguesa() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Hamburguesa lista"), 8000); // Simula un retraso de 8 segundos
+    });
+}
+
+function servirPuntaDeAnca() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Punta de anca lista"), 20000); // Simula un retraso de 20 segundos
+    });
+}
+
+servirPizza()
+            .then(resultado1 => {
+                console.log(resultado1); // Se ejecuta cuando la pizza está lista
+                return servirHamburguesa(); // Devuelve la promesa de la hamburguesa
+            })
+            .then(resultado2 => {
+                console.log(resultado2); // Se ejecuta cuando la hamburguesa está lista
+                return servirPuntaDeAnca(); // Devuelve la promesa de la punta de anca
+            })
+            .then(resultado3 => {
+                console.log(resultado3); // Se ejecuta cuando la punta de anca está lista
+            })
+            .catch(error => {
+                console.error("Error en el pedido revisar:", error); // Maneja cualquier error en la cadena de promesas
+            });
